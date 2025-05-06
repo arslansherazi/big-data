@@ -20,3 +20,26 @@ uv pip install -r requirements.txt
 ~~~
 uv pip freeze > requirements.txt
 ~~~
+
+### Add jupyter kernel (Run this command inside the venv)
+Pre-requisite
+~~~
+uv pip install ipykernel
+~~~
+~~~
+python -m ipykernel install --user --name=venv --display-name "bigdata-venv"
+~~~
+
+### IoT Explorer (IoT Hub Client)
+~~~
+git clone https://github.com/Azure/azure-iot-explorer.git
+~~~
+~~~
+cd azure-iot-explorer
+~~~
+~~~
+npm install
+~~~
+~~~
+npm start
+~~~
