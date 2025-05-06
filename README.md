@@ -47,3 +47,17 @@ npm start
 ~~~
 https://azure-samples.github.io/raspberry-pi-web-simulator/
 ~~~
+## IoT Commands
+~~~
+brew install azure-cli
+~~~
+~~~
+az extension add --name azure-iot
+~~~
+~~~
+az extension list
+~~~
+### Change Consumer Group for IoT device receiving messages
+~~~
+az iot hub monitor-events --hub-name F3-IT --consumer-group arslan-haider-consumer-group --device-id arslan-haider-device
+~~~
